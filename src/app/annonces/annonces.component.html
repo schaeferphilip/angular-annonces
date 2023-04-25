@@ -1,0 +1,16 @@
+<br>
+<a *ngFor="let ad of listads;let idx=index;">
+    <p color="blue" (click)="returnads(idx)" *ngIf="pagead==false">
+        {{ ad }}
+    </p>
+</a>
+<p *ngIf="pagead==true">
+    {{ name }} <br> <br>
+    Created on: <br>
+    {{ date }} <br> <br>
+    Update on : <br>
+    {{ update }} <br> <br>
+    Price: <br>
+    {{ price }} € <br> <br>
+    <button (click)="adreturn()">Return</button>
+</p>

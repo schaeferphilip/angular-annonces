@@ -1,0 +1,17 @@
+:host{
+    grid-area: header;
+    background-color: var(--main-blue);
+    font-size: 24px;
+    font-weight: 500;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+    button{
+        background-color: red;
+        border: 0;
+        border-radius:  5px;
+        color: white;
+    }
+}

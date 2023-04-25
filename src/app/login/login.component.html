@@ -1,0 +1,17 @@
+<div class="grey-bg">
+    <div class="message-container">
+        <br>
+        <img title="icon" src="https://vectorified.com/images/no-profile-picture-icon-21.jpg" width="100px"  height="100px">
+        <br>
+        Welcome!
+        Please sign in to access content!
+    </div>
+</div>
+<div class="light-grey-bg">
+    <input type="text" placeholder="Username" name="username" [(ngModel)]="login" />
+    <input type="password" placeholder="Password" name="password" [(ngModel)]="password" />
+    <div *ngIf="isLoginFailed" class="login-message alert alert-danger" role="alert">
+        {{ message }}
+    </div>
+    <button (click)="doLogin()">Sign in</button>
+</div>
